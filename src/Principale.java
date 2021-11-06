@@ -242,17 +242,13 @@ public class Principale {
 		while (!fini) {
 			System.out.println("Toutes les lumieres eteintes : "+lum.gagner());
 			if (cg.getNb() != 0 && lum.gagner()) {
-				ImageIcon icone = new ImageIcon("BBG.png");
-				JLabel lab = new JLabel(icone);
 				JLabel gg = new JLabel("Bravo !");
 				JLabel dep = new JLabel("Vous avez gagne en "+cg.getNb()+" deplacements");
-				JLabel fab = new JLabel("Fabien gros enculé!");
 				JPanel j = new JPanel();
 				
 				j.add(gg);
 				j.add(dep);
-				j.add(lab);
-				j.add(fab);
+
 				JFrame fr = new JFrame();
 				fr.setPreferredSize(new Dimension(400, 500));
 				fr.setContentPane(j);
